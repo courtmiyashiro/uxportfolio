@@ -1,0 +1,422 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+
+html, body {
+    height:100%;
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lora', serif;
+}
+
+
+p, .list {
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+    font-size:18px;
+}
+
+.nav {
+    float:right;
+}
+
+.nav-item, .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color:black;
+}
+
+.nav-link:hover, .nav-link:visited, .nav-item:visited {
+    color:black;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+
+.nav a:hover {
+    border-bottom: 3px solid black;
+}
+
+.nav a.active {
+    border-bottom: 3px solid black;
+}
+
+a:visited {
+    color:black;
+}
+
+.display {
+    padding-top:20vh;
+    font-family: 'Lora', serif;
+    font-size:50px;
+    
+}
+
+/* Home */
+
+#typing {
+	margin: 0px 0 0 0;
+	text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#text {
+	display: inline-block;
+	color: black;
+	border-right: 3px solid black;
+    font-style: normal;
+    font-weight: 300;
+    font-size:30px;
+    text-align:center;
+}
+
+#home-capstone {
+    padding-top:30vh;
+    padding-bottom:10vh;
+}
+
+.home-capstone {
+    width:70vh;
+    height:auto;
+    transition: transform .7s;
+}
+
+.home-capstone:hover {
+    transform: scale(1.2); 
+    animation-delay: 0.10s;
+}
+
+#home-misinfo {
+    padding-bottom:10vh;
+}
+
+.home-misinfo {
+    width:65vh;
+    height:auto;
+    transition: transform .7s;
+}
+
+.home-misinfo:hover {
+    transform: scale(1.2); 
+    animation-delay: 0.10s;
+    
+}
+
+#home-relax {
+    padding-bottom:10vh;
+}
+
+.home-relax {
+    width:70vh;
+    height:auto;
+    transition: transform .7s;
+    
+}
+
+.home-relax:hover {
+    transform: scale(1.2); 
+    animation-delay: 0.10s;
+}
+
+
+.btn-outline-dark {
+    /*  font-family: adelle-sans, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+
+
+/* About */
+#aboutheader {
+    background-color: #ECECEC;
+}
+
+#aboutme {
+    font-size:18px;
+}
+
+#facts {
+    padding-top:10vh;
+}
+
+#whydesign {
+    font-size:18px;
+}
+
+.aboutinfo {
+    font-size:18px;
+}
+
+.icons {
+    width:25px;
+    height:auto;
+}
+
+
+.portrait {
+    width:40vh;
+    height:auto;
+    border-radius: 10px;
+}
+
+
+
+
+/* Capstone */
+
+.capstonecover {
+    width: 60vh;
+    height:auto;
+}
+
+.capstonewireframes {
+    width:100vh;
+    height:auto;
+}
+
+#capstonebackground {
+    background-color:#F8F4FF;
+}
+
+.design {
+    width:30vh;
+    height:auto;
+}
+
+.persona {
+    width:60vh;
+    height:auto;
+}
+
+.inspiration {
+    width:75vh;
+    height:auto;
+}
+
+.prototype {
+    width:50vh;
+    height:auto;
+}
+
+.goals {
+    font-weight:bold;
+}
+
+.finaldesign {
+    width:120vh;
+    height:auto;
+}
+
+
+/* TikTok Misinfo */
+
+.misinfocover {
+    width:70vh;
+    height:auto;
+}
+
+#misinfobackground {
+    background-color:#ffebf1;
+}
+
+.fa-square-poll-horizontal, .fa-user-group, .fa-eye, .fa-question {
+    font-size:60px;
+}
+
+.method {
+    font-size:18px;
+    font-weight:bold;
+}
+
+#tiktokapp {
+    width:70vh;
+    height:auto;
+}
+
+.insight {
+    font-size:18px;
+    font-weight:300;
+}
+
+.data {
+    width:60vh;
+    height:auto;
+}
+
+.data2 {
+    width:70vh;
+    height:auto;
+}
+
+.findings {
+    font-weight:bold;
+}
+
+.fa-arrow-right {
+    font-size:50px;
+    padding-top:15vh;
+}
+
+.datacollection, .observations, .limitations {
+    font-weight:bold;
+    font-size:18px;
+}
+
+
+
+
+/* RELAX App */
+
+.relaxcover {
+    width:80vh;
+    height:auto;
+}
+
+#relaxbackground {
+    background-color:#DEF9FF;
+}
+
+.journeymap {
+    width:80vh;
+    height:auto;
+}
+
+.surveyresults {
+    width:100vh;
+    height:auto;
+}
+
+.sitemap {
+    width:90vh;
+    height:auto;
+}
+
+.relaxpersona {
+    width:50vh;
+    height:auto;
+}
+
+.lowprototype {
+    width:130vh;
+    height:auto;
+}
+
+.relaxprototype {
+    width:130vh;
+    height:auto;
+}
+
+
+
+/* All work pages */
+
+.member {
+    font-weight:bold;
+    font-size:18px;
+}
+
+.takeaways {
+    font-size:18px;
+    font-weight:bold;
+}
+
+.important {
+    font-weight:bold;
+    font-size:18px;
+}
+
+
+/* Other work */
+.otherwork {
+    font-size:21px;
+    font-family: 'Lora', serif;
+    text-decoration:none;
+    color:black;
+}
+
+a, a:hover, a:after, a:active {
+    text-decoration:none;
+    color:black;
+}
+
+
+/* Footer */
+.fa-envelope {
+    font-size:20px;
+    color:black;
+}
+
+.fa-linkedin {
+    font-size:20px;
+    color:black;
+}
+
+.footer {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    background-color: transparent;
+}
+
+.fa-hand-point-down {
+    font-size:40px;
+}
+
+
+
+
+/* underline button */
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+
+
+

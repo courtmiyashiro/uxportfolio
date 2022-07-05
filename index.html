@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Courtney Miyashiro">
+	  	<meta name="author" content="Courtney Miyashiro">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Courtney Miyashiro - Portfolio</title>
+        <link rel="site logo" href="images/logo.png">
+
+		<!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        
+        <!-- CSS -->
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+        
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/b51d9e9335.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+
+
+	</head>
+    
+    
+
+	<body>
+        
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-4 px-5 mb-2">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto mx-5">
+                    <img src="images/logo.png" alt="Portfolio logo" width="60" height="50">
+                  
+                </a>
+                
+               <ul class="nav mx-5">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active" aria-current="page">Work</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="https://drive.google.com/file/d/1CcoZkuIe9RjRY_WyKt9vC_2okuU2h_0h/view?usp=sharing" target="_blank" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+        
+    
+        
+        <div class="wrapper pb-5">
+        
+            <div class="px-4 py-5 text-center">
+                <h1 class="display">I'm Courtney</h1>
+            </div>
+    
+            <div id="typing" class="col-lg-6 mx-auto">
+                <div id="text">I'm a UX Designer </div>
+            </div>
+        
+        </div>
+        
+
+         <script type="text/javascript">
+
+        // List of sentences
+        var _CONTENT = [ "UX Designer", "Developer", "Thinker", "Observer" ];
+
+        // Current sentence being processed
+        var _PART = 0;
+
+        // Character number of the current sentence being processed 
+        var _PART_INDEX = 0;
+
+        // Holds the handle returned from setInterval
+        var _INTERVAL_VAL;
+
+        // Element that holds the text
+        var _ELEMENT = document.querySelector("#text");
+
+        // Implements typing effect
+        function Type() { 
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+
+            // If full sentence has been displayed then start to delete the sentence after some time
+            if(text === _CONTENT[_PART]) {
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function() {
+                    _INTERVAL_VAL = setInterval(Delete, 70);
+                }, 1000);
+            }
+        }
+
+        // Implements deleting effect
+        function Delete() {
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+
+            // If sentence has been deleted then start to display the next sentence
+            if(text === '') {
+                clearInterval(_INTERVAL_VAL);
+
+                // If last sentence then display the first one, else move to the next
+                if(_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+                _PART_INDEX = 0;
+
+                // Start to display the next sentence after some time
+                setTimeout(function() {
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+
+        // Start the typing effect on load
+        _INTERVAL_VAL = setInterval(Type, 100);
+
+        </script> 
+        
+        
+        <div id="home-capstone">
+            <div class="row">
+                <div class="col-12 col-md-3 offset-md-2 pt-3 mb-5">
+                    <h2>JMU Ole School Alumni Scholarship Group Capstone Project</h2>
+                    <p>A semester long project consisting of working closely with a client to develop a complete web system which would be utilized by students, mentors, and administration.</p>
+                    
+                    <a href="capstone1.html" class="btn btn-outline-dark">View Capstone</a>
+                </div>
+                
+                <div class="col-12 col-md-3 offset-md-1 mb-5">
+                    <a href="capstone1.html">
+                        <img class="home-capstone" src="images/home-capstone.png">
+                    </a>
+                    
+                </div>
+        
+            </div>
+        </div>
+
+        
+         <div id="home-misinfo">
+            <div class="row">
+                 <div class="col-12 col-md-3 offset-md-2 mb-5">
+                    <a href="tiktokmisinfo.html">
+                        <img class="home-misinfo" src="images/home-misinfo.png">
+                    </a>
+                </div>
+        
+                <div class="col-12 col-md-3 offset-md-2 pt-3 mb-5">
+                    <h2>Countering Misinformation on TikTok</h2>
+                    <p>A semester long user-centered research study on the countermeasures to fake news  and misinformation on short-video sharing platforms such as TikTok.</p>
+                    
+                    <a href="tiktokmisinfo.html" class="btn btn-outline-dark">View Study</a>
+                </div>
+                
+               
+            </div>
+        </div>
+            
+
+            
+        
+         <div id="home-relax">
+            <div class="row">
+                <div class="col-12 col-md-3 offset-md-2 pt-5 mb-5">
+                    <h2>RELAX Meditation App</h2>
+                    <p>A mobile application aimed to provide assistance to those who want to better their mental health. A free, effective, and easily accessible application for those of all ages.</p>
+                    
+                    <a href="relax.html" class="btn btn-outline-dark">View Project</a>
+                </div>
+                
+                <div class="col-12 col-md-3 offset-md-1 mb-5">
+                    <a href="relax.html">
+                        <img class="home-relax" src="images/home-relax.png">
+                    </a>
+                </div>
+        
+            </div>
+        </div>
+            
+        
+        
+
+<div class="container">
+        <div class="col align-items-center justify-content-center text-center pt-5">
+            <h4>Let's Connect!</h4>
+        </div>
+        
+        
+        <div class="footer pt-2 mb-5">
+            <div class="footer-contact-img-div mx-2">
+                <a href="mailto:courtmiyashiro@gmail.com" class="footer-contact-link w-inline-block">
+                    <i class="far fa-envelope"></i>
+                </a>
+            </div>
+                
+            <div class="footer-contact-img-div mx-2">
+                <a href="https://www.linkedin.com/in/courtney-miyashiro/" target="_blank" class="footer-contact-link w-inline-block">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+                
+        </div>
+    </div>
+                   
+      
+    
+  
+		
+	</body>
+</html>
+
+
+
